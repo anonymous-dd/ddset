@@ -64,7 +64,7 @@ All results are stored in `results`. The execution results are cached in a `.db`
 
 ## Unix Utilities
 
-The `find` and `grep` commands require `https://dbgbench.github.io/` to be [installed](https://dbgbench.github.io/docker/), and the containers running with `run.sh`. The container hashes are embedded in the scripts under `src`. E.g.
+The `find` and `grep` commands require `https://dbgbench.github.io/` to be [installed](https://dbgbench.github.io/docker/), and the containers running with `run.sh`. The container hashes are embedded in the scripts for `find` and `grep` under `src`. E.g.
 
 ```
 $ cat Fabstract/src/grep_3c3bdace.py 
@@ -74,4 +74,4 @@ def my_predicate(src):
     ...
 ```
 
-These hash `1c0f1a39c84b` need to be updated to the correct container id.
+These hash `1c0f1a39c84b` need to be updated to the correct container id. Once this is done, `make all_find` and `make all_grep` will work.
