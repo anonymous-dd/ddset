@@ -61,3 +61,7 @@ $ make fuzz_closure
 ```
 
 All results are stored in `results`. The execution results are cached in a `.db` directory
+
+## Unix Utilities
+
+The `find` and `grep` commands require `https://dbgbench.github.io/` to be installed, and the containers running. The container hashes are embedded in the scripts under `src`. These hashes need to be updated to the correct container id.
